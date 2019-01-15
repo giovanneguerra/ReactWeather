@@ -7,8 +7,7 @@ var About = require("About");
 var Examples = require("Examples");
 
 //Load Foundtion
-require('style!css!foundation-sites/dist/css/foundation.min.css')
-$(document).foundation();
+require('style!css!bootstrap/dist/css/bootstrap.min.css')
 
 ReactDOM.render(
   <Router history={hashHistory}>

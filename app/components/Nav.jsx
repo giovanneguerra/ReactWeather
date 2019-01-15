@@ -8,28 +8,23 @@ var Nav = React.createClass({
   },
   render: function(){
     return(
-      <div className="top-bar">
-        <div className="top-bar-left">
-          <ul className="menu">
-            <li className="menu-text">React Weather App</li>
-            <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink></li>
-            <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link></li>
-            <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link></li>
+      <nav className="navbar navbar-expand-lg">
+        <li className="navbar-brand">React Weather App</li>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item"><IndexLink to="/" className="nav-link" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink></li>
+            <li><Link to="/about"  className="nav-link" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link></li>
+            <li><Link to="/examples"  className="nav-link" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link></li>
           </ul>
-        </div>
-        <div className="top-bar-right">
-          <form onSubmit={this.onSearch}>
-            <ul className="menu">
-              <li>
-                <input type="search" placeholder="Serch weather"/>
-              </li>
-              <li>
-                <input type="submit" className="button" value="Get Weather"/>
-              </li>
-            </ul>
+          <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
+            <input className="form-control mr-sm-2" type="search" placeholder="Search Weather" aria-label="Search" />
+            <input type="submit" className="btn btn-outline-success my-2 my-sm-0" value="Get Weather"/>
           </form>
         </div>
-      </div>
+      </nav>
     );
   }
 });
