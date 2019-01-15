@@ -21,7 +21,7 @@ var Nav = React.createClass({
           </ul>
           <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
             <input className="form-control mr-sm-2" type="search" placeholder="Search Weather" aria-label="Search" />
-            <input type="submit" className="btn btn-outline-success my-2 my-sm-0" value="Get Weather"/>
+            <input type="submit" className="btn btn__search my-2 my-sm-0" value="Get Weather"/>
           </form>
         </div>
       </nav>

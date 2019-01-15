@@ -3,11 +3,13 @@ var Nav = require("Nav");
 
 var Main = (props) => {
   return(
-    <div className="container-fluid">
+    <div>
       <Nav/>
-      <div className="row">
-        <div className="col-md-8 offset-md-2 text-center">
-          {props.children}
+      <div className="container-fluid container__weather">
+        <div className="row">
+          <div className="col-md-8 offset-md-2 text-center">
+            {props.children}
+          </div>
         </div>
       </div>
     </div>
