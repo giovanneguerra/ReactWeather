@@ -1,0 +1,49 @@
+.navbar{
+  background-color: #36bfde;
+}
+.navbar .btn__search{
+  transition: 0.5s;
+  background-color: #fff;
+  color: #36bfde;
+  border-color: #36bfde;
+}
+.navbar .btn__search:hover{
+  transition: 0.5s;
+  background-color: #36bfde;
+  color: #fff;
+  border-color:#fff;
+}
+.navbar-brand{
+  color: #ffffff;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  color: #ffffff;
+}
+
+.container__weather{
+  padding-top: 60px;
+}
+.container__weather .text__weather{
+  padding-top: 32px;
+}
+
+.list-group .list-group-item{
+  background-color: #36bfde;
+}
+.list-group .list-group-item a{
+  color: #fff;
+}
+
+.btn.btn__weather{
+  transition: 0.5s;
+  background-color: #36bfde;
+  color: #fff;
+  border-color: #36bfde;
+}
+
+.btn.btn__weather:hover{
+  transition: 0.5s;
+  background-color: #fff;
+  color: #36bfde;
+  border-color: #36bfde;
+}
